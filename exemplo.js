@@ -22,7 +22,7 @@ function soma(a, b) {
 // Função curry
 function somaCurry(a) {
   return function (b) {
-      return a + b;
+    return a + b;
   };
 }
 
@@ -45,15 +45,15 @@ function multiplicacao(a, b) {
 }
 
 console.log(aplicarOperacao(5, 4, soma)); // 9
-console.log(aplicarOperacao(5, 4, multiplicacao)); // 2
+console.log(aplicarOperacao(5, 4, multiplicacao)); // 20
 
 // ---------  Closure --------- 
 
 function criarContador() {
   let contador = 0;
   return function () {
-      contador += 1;
-      return contador;
+    contador += 1;
+    return contador;
   };
 }
 
@@ -64,8 +64,8 @@ console.log(contador1()); // 2
 // --------- Callbacks --------- 
 function obterDados(callback) {
   setTimeout(() => {
-      const dados = { nome: "Taua", idade: 20 };
-      callback(dados);
+    const dados = { nome: "Taua", idade: 20 };
+    callback(dados);
   }, 1000);
 }
 
@@ -85,8 +85,8 @@ console.log(numeros); // [1, 2, 3, 4] - permanece o mesmo
 const objetoOriginal = {
   nome: "Taua",
   endereco: {
-      cidade: "São Paulo",
-      rua: "Rua A"
+    cidade: "São Paulo",
+    rua: "Rua A"
   }
 };
 
